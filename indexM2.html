@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bloom Tech's Program Flow</title>
+    <title>Program Flow</title>
     <style>
       #verse {
         font-style: italic;
-        font-size: 1em;
+        font-size: 2em;
       }
     </style>
   </head>
@@ -70,7 +70,7 @@
       const val3 = -1;
       // 🧠 pseudocode: if all the vals are either truthy or the empty string, result3 is "Do", otherwise "Don't"
 
-      if (val1 && val2 || val3) {
+      if ((val1 && val2) || val3) {
         result3 = "Do";
       } else {
         result3 = "Dont";
@@ -103,7 +103,8 @@
       } else if (int1 || int2 || int3 > 0) {
         result5 = "harsh";
       }
-
+      00
+        
       // 👉 CHALLENGE 6
       const amount1 = 4;
       const amount2 = 8;
@@ -124,8 +125,9 @@
         result7 = "day";
       } else if (friend1 && friend2 && friend3) {
         result7 = "twilight";
-      } else {result7 = "night"}
-
+      } else {
+        result7 = "night";
+      }
 
       // 👉 CHALLENGE 8
       const monday = 0;
@@ -144,23 +146,23 @@
       // - Friday, then "from"
       // - Saturday, then "within"
       // - Sunday, then "beneath"
-      const day = TODAY + 657385 
-      const daysLeft = day % 7
+      const day = TODAY + 657385;
+      const daysLeft = day % 7;
 
       if (day === 0) {
-        result8 = "in"
+        result8 = "in";
       } else if (daysLeft === 1) {
-        result8 = "at"
+        result8 = "at";
       } else if (daysLeft === 2) {
-        result8 = "on"
+        result8 = "on";
       } else if (daysLeft === 3) {
-        result8 = "into"
+        result8 = "into";
       } else if (daysLeft === 4) {
-        result8 = "from"
+        result8 = "from";
       } else if (daysLeft === 5) {
-        result8 = "within"
+        result8 = "within";
       } else if (daysLeft === 6) {
-        result8 = "beneath"
+        result8 = "beneath";
       }
 
       // Tests. Do not make any changes below this line!
@@ -210,7 +212,6 @@
           ? `${res}8 ${good}`
           : `${res}8 ${bad}`
       );
-      console.log(WIP)
     </script>
   </body>
 </html>
